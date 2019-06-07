@@ -13,3 +13,10 @@ object CatWithCatsShow {
       s"Cat $name is $age year old"
   }
 }
+
+
+object CatWithCatsShowSimple {
+
+  implicit val dateShow: Show[Cat] = Show.show(date => "Cat $name is $age year old")
+
+}
